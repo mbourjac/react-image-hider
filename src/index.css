@@ -6,6 +6,6 @@
 
 @layer base {
   body {
-    @apply bg-off-black font-body;
+    @apply max-w-[100vw] overflow-x-hidden font-body;
   }
 }

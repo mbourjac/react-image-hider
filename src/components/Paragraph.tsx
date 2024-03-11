@@ -5,5 +5,9 @@ type ParagraphProps = {
 };
 
 export const Paragraph = ({ children }: ParagraphProps) => {
-  return <p className="text-[4rem] font-bold text-white">{children}</p>;
+  return (
+    <p className="relative text-[4rem] font-bold text-white hover:z-[1]">
+      {children}
+    </p>
+  );
 };
