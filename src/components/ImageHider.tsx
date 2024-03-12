@@ -21,7 +21,7 @@ export const ImageHider = ({
   } = useElementMousePosition<HTMLSpanElement>();
 
   return (
-    <span className="relative inline-block">
+    <span className="group relative inline-block">
       <span
         className="relative inline-block cursor-default text-transparent [-webkit-text-stroke:1.5px_#fff]"
         onMouseMove={updateElementMousePosition}
@@ -31,7 +31,7 @@ export const ImageHider = ({
         {children}
         {elementMousePosition && (
           <span
-            className="pointer-events-none absolute h-[25rem] [transform:translate(-50%,-50%)]"
+            className="pointer-events-none absolute z-[--revealed-image-z-index] h-[25rem] [transform:translate(-50%,-50%)]"
             style={{
               left: elementMousePosition?.x,
               top: elementMousePosition?.y,
@@ -42,7 +42,7 @@ export const ImageHider = ({
           </span>
         )}
       </span>
-      <span className="pointer-events-none absolute left-0 top-0 inline-block text-transparent [-webkit-text-stroke:1.5px_#fff]">
+      <span className="pointer-events-none absolute left-0 top-0 inline-block text-transparent [-webkit-text-stroke:1.5px_#fff] group-hover:z-[--hovered-label-z-index]">
         {children}
       </span>
     </span>

@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --hovered-paragraph-z-index: 1;
+  --revealed-image-z-index: calc(var(--hovered-paragraph-z-index) + 1);
+  --hovered-label-z-index: calc(var(--revealed-image-z-index) + 1);
+}
+
 @layer base {
   body {
     @apply max-w-[100vw] overflow-x-hidden font-body;
