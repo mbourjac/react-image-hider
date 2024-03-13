@@ -7,9 +7,10 @@ import { Paragraph } from '../components/Paragraph';
 
 export const Home = () => {
   const aspectRatio = 4 / 3;
+
   return (
-    <main className="min-h-screen bg-off-black px-[64px] py-[128px]">
-      <div className="flex flex-col gap-16">
+    <main className="min-h-screen bg-off-black px-[32px] py-[64px] lg:px-[64px] lg:py-[128px]">
+      <div className="flex flex-col gap-12 sm:gap-16">
         <Paragraph>
           Excepteur sint{' '}
           <ImageHider src={image1} aspectRatio={aspectRatio}>

@@ -31,7 +31,7 @@ export const ImageHider = ({
         {children}
         {elementMousePosition && (
           <span
-            className="pointer-events-none absolute z-[--revealed-image-z-index] h-[25rem] [transform:translate(-50%,-50%)]"
+            className="pointer-events-none absolute z-[--revealed-image-z-index] w-[min(32rem,80vw)] [transform:translate(-50%,-50%)]"
             style={{
               left: elementMousePosition?.x,
               top: elementMousePosition?.y,

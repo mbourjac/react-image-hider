@@ -12,6 +12,6 @@
 
 @layer base {
   body {
-    @apply max-w-[100vw] overflow-x-hidden font-body;
+    @apply max-w-[100vw] overflow-x-hidden bg-off-black font-body;
   }
 }
