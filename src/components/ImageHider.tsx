@@ -23,7 +23,7 @@ export const ImageHider = ({
   return (
     <span className="group relative inline-block">
       <span
-        className="relative inline-block cursor-default text-transparent [-webkit-text-stroke:1.5px_#fff]"
+        className="text-stroke-1 lg:text-stroke-1.5 relative inline-block cursor-default text-transparent text-stroke-white"
         onMouseMove={updateElementMousePosition}
         onMouseOut={resetElementMousePosition}
         onBlur={resetElementMousePosition}
@@ -42,7 +42,7 @@ export const ImageHider = ({
           </span>
         )}
       </span>
-      <span className="pointer-events-none absolute left-0 top-0 inline-block text-transparent [-webkit-text-stroke:1.5px_#fff] group-hover:z-[--hovered-label-z-index]">
+      <span className="text-stroke-1 lg:text-stroke-1.5 pointer-events-none absolute left-0 top-0 inline-block text-transparent text-stroke-white group-hover:z-[--hovered-label-z-index]">
         {children}
       </span>
     </span>
